@@ -1,0 +1,53 @@
+body {
+    margin : 0;
+    height: 300vh; /* 3x view height of screen */
+    background-color: turquoise;
+}
+#logo {
+    display: inline-block;
+    padding: 5px 50px;
+}
+nav {
+    background-color: black;
+    display: flex;
+}
+nav>ul {
+    border: 1px solid black;
+    /* display: inline-block; */
+    padding: 0;
+    margin: 0;
+}
+nav>ul>li {
+    display: inline-block;
+    
+}
+
+nav>ul>li>a  {
+    text-decoration: none;
+    color: rgb(181, 181, 181);
+    display: block;
+    padding: 20px 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#support-ul {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* hero image styling */
+#hero-image {
+    height: 100vh;
+    background-color: rgb(218, 238, 209);
+    background-image: url('dragon-48.gif');
+    background-size: cover;
+
+    display: flex;
+    justify-content: center; /*left right*/
+    align-items: flex-end; /*up down*/
+}
+
+#shoutout>h1 {
+    font-size: 4.5rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
