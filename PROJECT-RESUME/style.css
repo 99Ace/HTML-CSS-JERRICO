@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+nav {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+nav>ul {
+    /* to remove all margin and padding on ul */
+    margin: 0 0 0 auto;
+    padding: 0;
+    
+}
+nav>ul>li {
+    display: inline-block;
+}
+
+/* you can replace nav>ul>li>a with .nav-link class */
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    padding: 0 20px;
+}
+.nav-link:hover {
+    color: black;
+    border-bottom: 3px solid red;
+}
+.btn {
+    padding: 8px 24px;
+    border-radius: 24px;
+    background-color: gold;
+    border: rgb(193, 164, 5) 2px solid;
+    color: rgb(48, 47, 47);
+    font-weight: 900;
+}
+
+
+/* main */
+main {
+    display: flex;
+    background-color: rgb(29, 187, 189);
+}
+.main-pic {
+    flex: 1;
+}
+.main-circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-image: url('woody.png');
+    background-size: cover;
+    margin: 20px auto;
+    
+}
+.main-info {
+    flex: 1;
+    padding: 0 50px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
