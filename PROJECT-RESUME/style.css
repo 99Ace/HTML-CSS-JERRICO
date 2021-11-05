@@ -16,30 +16,83 @@ nav>ul {
 nav>ul>li {
     display: inline-block;
 }
-
-/* you can replace nav>ul>li>a with .nav-link class */
 .nav-link {
     display: block;
     text-decoration: none;
     color: rgb(53, 53, 53);
-    padding: 0 20px;
+    padding: 0 20px; 
 }
 .nav-link:hover {
     color: black;
     border-bottom: 3px solid red;
 }
-.btn {
+/* .btn {
     padding: 8px 24px;
     border-radius: 24px;
     background-color: gold;
     border: rgb(193, 164, 5) 2px solid;
     color: rgb(48, 47, 47);
     font-weight: 900;
+} */
+.btn {
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: 24px;
+    background-color: gold;
+    color: rgb(48, 48, 48);
+    border: 2px solid rgb(205, 177, 20);
 }
-
+.bg-mini-link {
+    background-color: rgb(249, 228, 111);
+}
+.bg-mini-link:hover {
+    background-color: gold;
+}
 
 /* main */
 main {
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+}
+.square{
+    height: 150px;
+    width: 150px;
+    background-color: rgba(64, 224, 208, 0.15);
+    position: absolute;
+    transform: rotate(45deg);
+    left: 50%;
+    top: 50px;
+}
+.picture {
+    /* background-color: honeydew; */
+    flex: 2;
+}
+.circle {
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    /* background-color: lavender; */
+    background-image: url('https://i.kym-cdn.com/entries/icons/facebook/000/018/385/Rs_634x1024-130605092844-634.DespMe2.mh.060513.jpg');
+    background-size: cover;
+    margin: 50px auto;
+}
+
+.info {
+    /* background-color: gold; */
+    flex : 3;
+
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+
+
+
+
+
+/* main {
     display: flex;
     background-color: rgb(29, 187, 189);
 }
@@ -62,4 +115,4 @@ main {
 
     display: flex;
     align-items: center;
-}
+} */
