@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Own CSS -->
     <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -55,28 +60,62 @@
     </main>
 
     <section id="section-education">
+        <div class="sect-edu-wrapper">    
         <!-- education div -->
-        <div>
-            <h2>EDUCATION</h2>
-            <ul>
-                <li><h3>Primary School :</h3> XYZ Primary</li>
-                <li>Major in:
-                    <ul>
-                        <li>English</li>
-                        <li>Chinese</li>
-                        <li>Mathematics</li>
-                        <li>Science</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+            <div class="edu-info">
+                <h3>PRIMARY - ABC Primary School</h3>
+                <h4>Subjects</h4>
+                <ul>
+                    <li>English 
+                        <div class="progress-bar">
+                                <div class="good flex-6"></div>
+                                <div class="weak flex-4"></div>
+                        </div>
+                    </li>
+                    <li>Chinese
+                        <div class="progress-bar">
+                            <div class="good flex-9"></div>
+                            <div class="weak flex-1"></div>
+                        </div>
+                    </li>
+                    <li>Science
+                        <div class="progress-bar">
+                            <div class="good flex-7"></div>
+                            <div class="weak flex-3"></div>
+                        </div>
+                    </li>
+                    <li>Mathematics
+                        <div class="progress-bar">
+                            <div class="good flex-10"></div>
+                            <div class="weak"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         <!-- SKILLS: html div -->
+            <div class="skill-html">
+                <div>
+                    <!-- icon -->
+                    <i class="fab fa-html5 icon"></i>
+                    <!-- title -->
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="good flex-8"></div>
+                        <div class="weak flex-2"></div>
+                    </div>
+                </div>
+            </div>
         <!-- SKILLS: css div -->
+            <div class="skill-css">CSS</div>
+        </div>
 
+       
     </section>
 
 
-  
+    
+
+   
     <!-- https://replit.com/@gtrgreatgames/lesson-8#style.css -->
     <!-- education -->
 
