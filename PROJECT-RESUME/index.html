@@ -171,20 +171,50 @@
         </div>
     </section>
 
-    <section id="sect-hobby">
-
-    </section>
     
+    <!-- contact form -->
+    <section id="contact">
+        <h3>CONTACT ME </h3>
+        <div id="m-form">
+            <div class="m-form">
+                <!-- <label for="">Name : </label> -->
+                <input class="m-form-input" id="name" type="text" placeholder="Name" required>
+            </div>
+            <div class="m-form">
+                <!-- <label for="">Phone : </label> -->
+                <input class="m-form-input" id="phone" type="text" placeholder="Phone">
+            </div>
+            <div class="m-form">
+                <!-- <label for="">Email : </label> -->
+                <input class="m-form-input" type="email" placeholder="Email">
+            </div>
+            <div class="m-form">
+                <!-- <label for="">Message :</label><br> -->
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="m-form">
+                <input type="submit" value="Send" onclick="submit()">
+            </div>
+            
+        </div>
+    </section>
    
+    <footer>
+        <a href="www.facebook.com"><i class="fab fa-facebook-square icon-social"></i></a>
+    </footer>
     
 
    
     <!-- https://replit.com/@gtrgreatgames/lesson-8#style.css -->
     <!-- education -->
 
-    <!-- hobbies -->
-
-    <!-- footer - contact me  -->
+    <script>
+        function submit() {
+            let name = document.getElementById('name').value;
+            let phone = document.getElementById('phone').value;
+            document.getElementById("m-form").innerHTML = "<h2>"+name+" The form is submitted</h2>";
+        }
+    </script>
     
 </body>
 </html>
