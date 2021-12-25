@@ -1,0 +1,33 @@
+/* iphone X - 375px */
+/* ipad - 768px */
+/* ipad pro - 1024px */
+/* laptop - 1200px */
+/* bigger laptop - 1400px and above */
+
+/* laptop settings */
+/* apply from infinity to 0px */
+body {
+    background-color: red;
+}
+
+/* ipad pro settings */
+@media screen and (max-width:1200px) {
+    body {
+        background-color: blue;
+    }
+    
+}
+
+/* ipad settings */
+@media screen and (max-width:768px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* mobile settings */
+@media screen and (max-width:576px) {
+    body {
+        background-color: pink;
+    }
+}

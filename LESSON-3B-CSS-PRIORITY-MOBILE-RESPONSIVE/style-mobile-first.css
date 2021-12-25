@@ -1,0 +1,51 @@
+/* iphone X - 375px */
+/* ipad - 768px */
+/* ipad pro - 1024px */
+/* laptop - 1200px */
+/* bigger laptop - 1400px and above */
+
+/* mobile settings */
+/* applys to screen size of 0px to infinity width */
+body {
+    background-color: lightpink;
+}
+.box {
+    padding: 10px;
+}
+/* ipad settings */
+/* applys to screen size of MINUMUM 768px to infinity width */
+@media screen and (min-width:768px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* ipad pro settings */
+@media screen and (min-width:1024px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+    .box {
+        padding: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* laptop settings */
+@media screen and (min-width:1200px) {
+    body {
+        background-color: pink;
+    }
+    .box {
+        width: 60%;
+        
+    }
+}
+
+/* larger laptop settings */
+@media screen and (min-width:1400px) {
+    body {
+        background-color: turquoise;
+    }
+}

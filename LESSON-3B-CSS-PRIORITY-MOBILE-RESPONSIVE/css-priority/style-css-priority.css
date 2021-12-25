@@ -1,0 +1,37 @@
+/* PRIORITY I */
+/* External CSS */
+h1 {
+    color: blue;
+    /* color: blue !important; */
+}
+
+/* PRIORITY II */
+/* Elements and pseudo-elements  */
+/* Score : 1 */
+h2 {
+    color: blue;
+}
+h2#pink {
+    color: magenta;
+    /* Score: 101 */
+}
+/* Classes */
+/* Score : 10 */
+.yellow {
+    color: yellow;
+}
+
+/* IDs */
+/* Score : 100 */
+#pink {
+    color: pink;
+}
+
+/* PRIORITY III */
+h3 {
+    color: green !important;
+}
+
+h3 {
+    color: magenta;
+}
