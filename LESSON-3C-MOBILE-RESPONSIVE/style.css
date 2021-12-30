@@ -1,0 +1,69 @@
+/* mobile setting */
+.red {
+    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80);    
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+.call-out {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.blue {
+    background-color: lightblue;
+    min-height: 200px;
+}
+.blue>img {
+    width: 80%;
+}
+.purple {
+    background-color: rgb(142, 85, 142);
+    min-height: 200px;
+}
+
+
+/* ipad setting */
+@media screen and (min-width:768px) {
+    .red {
+        height: 500px;
+        background-image: url(https://media.istockphoto.com/photos/hamburger-with-cheese-and-french-fries-picture-id1188412964?k=20&m=1188412964&s=612x612&w=0&h=Ow-uMeygg90_1sxoCz-vh60SQDssmjP06uGXcZ2MzPY=);
+    }
+    .call-out {
+        border: 1px solid white;
+        padding: 10px;
+        bottom: unset;
+        left: unset;
+        bottom: 30px;
+        right: 30px;
+    }
+    .lower-div {
+        display: flex;
+    }
+    .blue, .purple {
+        flex:1;
+    }
+}
+
+/* laptop setting */
+@media screen and (min-width:1200px) {
+    main {
+        display:flex;
+    }
+    .red {
+        height: 650px;
+        background-image: url(https://media.istockphoto.com/photos/delicious-homemade-hamburger-and-french-fries-picture-id1254672762?b=1&k=20&m=1254672762&s=170667a&w=0&h=nKrG40G2jj9O8wzJ8wDD2zmUKNp00mcdVWK_f_zixug=);
+        flex:2;
+    }
+    .call-out {
+        left: 20%;
+        right: unset;
+    }
+    .lower-div{
+        flex: 1;
+        flex-direction: column;
+    }
+}
