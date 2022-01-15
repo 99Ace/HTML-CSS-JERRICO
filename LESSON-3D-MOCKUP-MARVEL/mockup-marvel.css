@@ -1,0 +1,47 @@
+/* mobile settings */
+body {
+    margin: 0;
+}
+main {
+    /* vh means view-height - means how many % of the device */
+    height: 40vh;
+    background-color: blanchedalmond;
+    background-image: url(https://i.annihil.us/u/prod/marvel/images/OpenGraph-TW-1200x630.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+.btn {
+    padding: 6px 24px;
+    font-variant: small-caps;
+
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    /* move back X-axis by 50% of own's width */
+    transform: translateX(-50%);
+}
+
+/* ipad settings */
+@media screen and (min-width:768px) {
+    main {
+        height: 50vh;
+    }
+    .btn {
+        left: unset;
+        right: 40px;
+        bottom: 40px;
+        font-size: 1.2rem;
+    }
+}
+/* laptop settings */
+@media screen and (min-width:1200px) {
+    main {
+        height: 100vh;
+    }
+    .btn {
+        top: 40px;
+        bottom: unset;
+    }
+}

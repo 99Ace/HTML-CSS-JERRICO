@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision : Positioning ABSOLUTE</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            box-sizing: border-box;
+
+            position: relative;
+            
+        }
+        /* positioning : apply to the element you want to move, normally the child */
+        .child {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            box-sizing: border-box;
+        }
+        .red {
+            background-color: red;
+            position: absolute;
+            /* if the parent's position is not set to RELATIVE */
+            /* then it take reference from the device's width */
+            left: 100px;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child red"></div>
+        <div class="child yellow"></div>
+    </div>
+</body>
+</html>
