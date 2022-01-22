@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            padding: 50px;
+        }
+        .child {
+            box-sizing: border-box;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        .red {
+            background-color: red;
+            /* set the name of the animation to use */
+            animation-name: rainbow;
+            /* set how long the animation last */
+            animation-duration: 4s;
+            /* set the delay before the animation start */
+            animation-delay: 2s;
+            /* the end mode of the animation */
+            animation-fill-mode: forwards;
+            /* set how many times the animation run */
+            animation-iteration-count: 3;
+            /* set alternate and animation will reverse the direction after it finish the first animation  */
+            /* if iteration set to infinite, then it will go forward and back */
+            animation-direction: alternate;
+        }
+        @keyframes rainbow {
+            from {background-color: red;}
+            to {background-color: blue;}
+        }
+
+        .yellow {
+            background-color: yellow;
+            animation-name: real-rainbow;
+            animation-duration: 10s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay:1s
+        }
+        @keyframes real-rainbow {
+            0% {background-color: red;}
+            20% {background-color: orange;}
+            40% {background-color: yellow;}
+            60% {background-color: green;}
+            80% {background-color: blue;}         
+            100% {background-color: blueviolet;}
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child red">Animate Me -simple </div>
+        <div class="child yellow">Animate Me - detailed</div>
+        
+    </div>
+</body>
+</html>

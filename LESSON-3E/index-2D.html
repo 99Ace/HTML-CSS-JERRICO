@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            padding: 50px;
+        }
+        .child {
+            box-sizing: border-box;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        .red {
+            background-color: red;
+            /* 2D Animation */
+            /* TRANSLATE , TRANSLATEX, TRANSLATEY */
+
+            /* (left/right, up/down) */
+            /* + (right, down) */
+            /* - (left, up) */
+            transform: translate(-50px, 50px);
+            /* transform: translateX(100px); */         
+            /* transform: translateY(100px); */
+
+            /* ROTATE */
+            transform: rotate(180deg);
+
+            /* SCALE : scaleX scaleY */
+            transform: scaleY(2);
+
+            /* SKEW : skewX skewY*/
+            transform: skew(-20deg,20deg);
+            transform: skewX(20deg);
+            transform: skewY(20deg);
+
+            /* Combine all  */
+            transform: translateX(150px) translateY(100px) rotate(45deg) scale(2);
+
+        }
+        .yellow {
+            background-color: yellow;
+            /* MATRIX */
+            /* The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+            transform: matrix(2,0.3,0,1,0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child red">JERRICO</div>
+        <div class="child yellow">Yellow</div>
+    </div>
+</body>
+</html>

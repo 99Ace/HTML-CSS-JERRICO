@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            padding: 50px;
+        }
+        .child {
+            box-sizing: border-box;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        .red {
+            background-color: red;
+            transform: rotateX(180deg);
+        }
+        .yellow {
+            background-color: yellow;
+            transform: rotateY(180deg);
+        }
+        .green {
+            background-color: green;
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child red">ROTATE X </div>
+        <div class="child yellow">ROTATE Y</div>
+        <div class="child green">ROTATE Z</div>
+    </div>
+</body>
+</html>

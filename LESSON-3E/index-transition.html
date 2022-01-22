@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            padding: 50px;
+        }
+        .child {
+            box-sizing: border-box;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        /* transition
+        transition-delay
+        transition-duration
+        transition-property
+        transition-timing-function */
+        .red {
+            background-color: red;
+            /* define which css property is having transition */
+            transition-property: width, background-color;
+            /* setting the duration of the transition */
+            transition-duration: 4s, 2s;
+            /* linear, ease, ease-in, ease-out, ease-in-out */
+            transition-timing-function: ease-in;
+            /* transition delay */
+            transition-delay: 1s;
+
+        }
+        .red:hover {
+            background-color: blueviolet;
+            width: 200px;
+        }
+        .yellow {
+            background-color: yellow;
+            transition: width 3s linear 1s, background-color 3s ease-in 1s;
+        }
+        .yellow:hover {
+            width: 300px;
+            background-color: brown;
+        }
+        .green {
+            background-color: green;
+            transition: transform 1.5s;
+        }
+        .green:hover {
+            transform: translateX(200px) rotate(1440deg) scale(3);
+        }
+        .nav-link {
+            text-decoration: none;
+            color: grey;
+            transition: color 0.8s, border-bottom 0.8s;
+        }
+        .nav-link:hover {
+            color: black;
+            border-bottom: black solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child red">HEllO WORLD </div>
+        <div class="child yellow">HELLO WORLD</div>
+        <div class="child green">HELLO WORLD</div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="" class="nav-link">Home</a></li>
+            <li><a href="" class="nav-link">About Us</a></li>
+            <li><a href="" class="nav-link">Menu</a></li>
+            <li><a href="" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
