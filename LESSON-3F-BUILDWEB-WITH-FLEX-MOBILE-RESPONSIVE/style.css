@@ -1,0 +1,161 @@
+/* mobile 0px and above - infinity*/
+body {
+    background-color: orange;
+    margin: 0;
+}
+/* navbar styling */
+nav {
+    /* border: 1px solid white; */
+    background-color: rgb(254, 189, 69);
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+.logo, nav>ul, .collapse {
+    /* border: 1px solid black; */
+}
+.logo {
+    margin-right: auto;
+}
+.logo img {
+    height:68px;
+}
+.collapse>button {
+    font-size: 1.6rem;
+    color: white;
+    background-color: orange;
+    border: 1px solid white;
+}
+nav>ul {
+    display: none;
+}
+/* end of navbar */
+
+/* main styling */
+main {
+    height: 400px;
+    background-image: url(https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/01/23/7fb7471e-3b78-11ea-a16e-39b824591591_image_hires_174833.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    /* border: solid 1px white; */
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.callout {
+    color: white;
+    text-align: center;
+}
+.shaking-orange {
+    height: 100px;
+    animation-name: shaking ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shaking {
+    /* 0% {
+        transform: rotate(-40deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(40deg);
+    } */
+    from {
+        transform: translateX(-50px) rotate(-20deg);
+    }
+    to {
+        transform: translateX(50px) rotate(20deg);
+    }
+
+}
+/* end of main */
+
+/* ipad setting : 768px and above */
+@media screen and (min-width:768px) {
+    body {
+        background-color: paleturquoise;
+    }
+    /* no code for nav if no changes from mobile site */
+
+    /* main styling */
+    .overlay {
+        justify-content: flex-end;
+        padding-right: 40px;
+    }
+    /* end of main  */
+}
+
+/* ipad pro setting : 992px and above */
+@media screen and (min-width:992px) {
+    body {
+        background-color: palegoldenrod;
+    }
+    /* navbar styling  */
+    .collapse{
+        display: none;
+    }
+    nav>ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+    }
+    nav>ul>li {
+        display: inline-block;        
+    }
+    nav>ul>li>a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 20px;
+        
+        transition: border-bottom 0.3s ease;
+    }
+    nav>ul>li>a:hover {
+        border-bottom: red 2px solid;
+    }
+    /* end of navbar */
+
+    /* main styling */
+    main {
+        height: 500px;
+    }
+    .callout {
+        font-size: 1.6rem;
+    }
+    /* end of main */
+}
+
+/* laptop setting : 1200px and above */
+@media screen and (min-width:1200px) {
+    body {
+        background-color: lightpink;
+    }
+    /* main styling */
+    main {
+        height: 600px;
+    }
+    .overlay {
+        align-items: center;
+        padding-right: 60px;
+    }
+    .callout {
+        font-size: 1.8rem;
+    }
+    /* end of main */
+}
